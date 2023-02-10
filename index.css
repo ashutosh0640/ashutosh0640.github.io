@@ -8,6 +8,7 @@
 body{
     font-family: 'Courier New', Courier, monospace;
     color: #c4974c;
+    text-align:left
    
 }
 /*************** BACKGROUND ****************/
@@ -23,12 +24,12 @@ body{
 }
 
 .bg-box{
-    border: red;
+    border:2px solid red;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 1600px;
     overflow: hidden;
 }
 .bg-box li{
@@ -45,7 +46,7 @@ body{
     left: 86%;
     width: 80px;
     height: 80px;
-    animation-delay: 0s;
+    animation-delay: 6s;
 }
 .bg-box li:nth-child(2){
     left: 12%;
@@ -71,7 +72,7 @@ body{
     left: 65%;
     width: 40px;
     height: 40px;
-    animation-delay: 0s;
+    animation-delay: 10s;
 }
 .bg-box li:nth-child(6){
     left: 15%;
@@ -85,7 +86,7 @@ body{
         opacity: 1;
     }
     100%{
-        transform: translateY(-400px) rotate(360deg);
+        transform: translateY(-1200px) rotate(360deg);
         opacity: 0;
     }
 }
@@ -144,13 +145,22 @@ a{
     
 }
 
+/*************** Top Body *******************/
 
 .top-body{
-    border: 3px solid greenyellow;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    /* box-shadow: #c4984c64 0px 54px 55px, #c4984c36 0px -12px 30px, #c4984c36 0px 4px 6px, #c4984c3e 0px 12px 13px, #c4984c20 0px -3px 5px; */
+
     margin-top: 50px;
-    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
     height: 300px;
     display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
     
 }
 .portfolio-pic{
@@ -170,21 +180,13 @@ a{
     border: 2px solid red;
 }
 
-
-/*************** Top Body *******************/
-.top-body{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-evenly;
-    align-items: center;
-}
 .top-body :nth-child(3){
     border: 2px solid red;
 }
 
-.top-body :nth-child(4){
+/* .top-body :nth-child(4){
     border: 2px solid rgb(13, 255, 0);
-}
+} */
 
 
 /*************** I'm Ashutosh Kumar *******************/
@@ -210,15 +212,60 @@ a{
         border-color: transparent;
     }
 }
-
+/******************ABOUT ME*****************************/
 .aboutme-body{
-    border: 3px solid red;
-    margin-top: 50px;
-    padding: 0 250px;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: auto;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .aboutme-body :nth-child(1){
     margin-bottom: 30px;
+}
+
+.aboutme-body :nth-child(2){
+    margin-bottom: 30px;
+    width: 50%;
+}
+
+
+/*******************       SKILL    BODY        ***********/
+.skill-body{
+    width: 80%;
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+   
+}
+
+.skill-body h1{
+    border: 3px solid yellow;
+}
+
+.skill-body :nth-child(2){
+    border: 3px solid red;
+    width: 100%;
+    height: 1800px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.skill-body :nth-child(2) div{
+    border: 3px solid greenyellow;
+    
 }
 
 
