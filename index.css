@@ -8,8 +8,12 @@
 body{
     font-family: 'Courier New', Courier, monospace;
     color: #c4974c;
-    text-align:left
-   
+    text-align:left;
+}
+
+:root{
+    --text-color:c4974c;
+    background: linear-gradient(to right, #021116, #023e3e);
 }
 /*************** BACKGROUND ****************/
 .main-body{
@@ -21,16 +25,18 @@ body{
     background: linear-gradient(to right, #021116, #023e3e);
     width: 100%;
     height: auto;
+    color: var(--text-color);
 }
 
 .bg-box{
-    border:2px solid red;
+    /* border:2px solid red; */
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 1600px;
+    height: 100%;
     overflow: hidden;
+    /* z-index: -1; */
 }
 .bg-box li{
     position: absolute;
@@ -97,7 +103,7 @@ body{
 nav{
     /* border: 5px solid red; */
     width: 100%;
-    height: 100px;
+    height: 80px;
     padding: 0 20px;
     /* border-bottom: 5px solid #c4984c52; */
     box-shadow: #021116 0px 10px 500px, #c4984c52 0px 8px 8px;
@@ -177,11 +183,11 @@ a{
 }
 
 .top-body:nth-child(2){
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .top-body :nth-child(3){
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 /* .top-body :nth-child(4){
@@ -254,19 +260,43 @@ a{
     border: 3px solid yellow;
 }
 
-.skill-body :nth-child(2){
-    border: 3px solid red;
+.skill-body>div{
+    /* border: 3px solid red; */
     width: 100%;
-    height: 1800px;
+    /* height: 1800px; */
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    /* grid-template-rows: repeat(3, 1fr); */
 }
 
-.skill-body :nth-child(2) div{
-    border: 3px solid greenyellow;
+.skill-body>div>div{
+    border: 4px solid white;
+    height: 200px;
+}
+
+.icons{
+    /* border: 3px solid red; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/******************** Projects ******************************/
+.projects{
+    /* border: 3px solid red; */
+    width: 80%;
+    
+    margin-left:10%;
+    margin-top: 100px;
     
 }
+
+.projects>img{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
 
 
 
