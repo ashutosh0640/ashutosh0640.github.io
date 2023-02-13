@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: auto;
     padding: 0;
     box-sizing: border-box;
     max-width: 1400px;
@@ -9,6 +9,7 @@ body{
     font-family: 'Courier New', Courier, monospace;
     color: #c4974c;
     text-align:left;
+    margin: auto;
 }
 
 :root{
@@ -135,28 +136,27 @@ nav ul{
 
 nav>ul>li{
     /* border: 2px solid black; */
-    display: inline;
+    display: inline-block;
     list-style: none;
 }
-nav ul li :hover{
-    background-color: #c4984c7c;
-    color: #021116;
-    font-weight: 900;
-     box-sizing: border-box;
-    ;
-    /* animation: btnHover 1s; */
+nav>ul>li>a{
+    margin: 0 10px;
+    width: 100%;
 }
 
-@keyframes btnHover{
-    0% {
-       
-    }
+nav>ul>li:hover{
+    color: #021116;
+    font-weight: 900;
+    box-sizing: border-box;
+    background-color: #c4974c;
+    border-radius: 20px;
 
-    100% {
-       background-color: #c4974c;
-       color: #021116;
-        box-sizing: border-box;
-    }
+}
+
+nav>ul>li>a:hover{
+    color: #021116;
+    font-weight: 900;
+    width: 100%;
 }
 
 
@@ -167,6 +167,7 @@ nav span{
 
 a{
     text-decoration: none;
+
     color: #c4974c;
     font-size: x-large;
     
@@ -175,6 +176,7 @@ a{
 /*************** Top Body *******************/
 
 .top-body{
+    /* border: 2px solid white; */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     margin-top: 50px;
     margin-left: 10%;
@@ -188,46 +190,75 @@ a{
     
 }
 .portfolio-pic{
-    /* border: 3px solid red; */
+    /* border: 3px solid white; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: 350px;
     height: 350px;
     background-color: #c4984c21;
     border-radius: 50%;
 }
+.portfolio-pic:hover{
+    /* animation: portfolio-anim 1s; */
+    border-radius: 0%;
+}
+.portfolio-pic>img:hover{
+    /* animation: portfolio-anim 1s; */
+    border-radius: 0%;
+}
+
+
 .portfolio-pic img{
     width: 100%;
      height: auto;
     border-radius: 50%;
 }
 
-.top-body:nth-child(2){
-    /* border: 2px solid red; */
+.java-backend-heading{
+    /* width: 400px; */
+    /* border: 2px solid white; */
 }
 
-.top-body :nth-child(3){
-    /* border: 2px solid red; */
+.Resume{
+    /* border: 3px solid white; */
+    display: inline-block;
+    width: 200px;
+    background-color: #c4974c;
+    color: #021116;
+    font-weight: 900;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
 }
 
-/* .top-body :nth-child(4){
-    border: 2px solid rgb(13, 255, 0);
-} */
 
-
-/*************** I'm Ashutosh Kumar *******************/
+/*************** Typing animation *******************/
 .typing-heading{
     border-right: 4px solid #c4974c;
     font-size: xx-large;
     color: #c4974c;
-    width: 26ch;
-    height: 30px;
+    /* width: 430px; */
+    /* height: 30px; */
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 2s steps(19), blinking 0.5s infinite step-end alternate;
+    animation: typing 6s steps(19) infinite reverse, blinking 0.5s infinite step-end alternate;
 }
 
 @keyframes typing{
-   from{
+   0%{
     width: 0;
+   }
+
+   33%{
+    width: 100%;
+   }
+
+   66%{
+    width: 0;
+   }
+
+
+   100%{
+    width: 100%;
    }
 }
 
@@ -281,7 +312,7 @@ a{
 }
 
 .skill-body>div{
-    border: 3px solid red;
+    /* border: 3px solid red; */
     width: 100%;
     /* height: 1800px; */
     display: grid;
@@ -291,15 +322,18 @@ a{
 }
 
 .skill-body>div>div{
-    border: 4px solid white;
+    /* border: 4px solid white; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     height: 200px;
+
 }
 
 .icons{
-    border: 3px solid red;
+    /* border: 3px solid red; */
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -312,6 +346,11 @@ a{
     margin-top: 100px;
     
 }
+/* .calender{
+    width: 500px;
+    height: 200px;
+    background-color: red;
+} */
 
 .projects>img{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -357,14 +396,14 @@ a{
      } 
 }
 
-.top-body{
+/* .top-body{
     margin-top: 25px;
     margin-left: 2.5px;
     margin-right: 2.5px;
     width: 95%;
     height: 500px;
     flex-direction: column;
-}
+} */
 
 
 
@@ -393,14 +432,16 @@ a{
      }
      nav span i{
        color: #c4974c;
-     } 
+     }
+
+     /* .top-body{
+        margin-top: 25px;
+        margin-left: 2.5px;
+        margin-right: 2.5px;
+        width: 95%;
+        height: 500px;
+        flex-direction: column;
+    } */
 }
 
-.top-body{
-    margin-top: 25px;
-    margin-left: 2.5px;
-    margin-right: 2.5px;
-    width: 95%;
-    height: 500px;
-    flex-direction: column;
-}
+
