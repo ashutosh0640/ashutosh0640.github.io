@@ -294,22 +294,21 @@ nav>span{
     align-items: center;
 }
 
-.aboutme-body :nth-child(1){
-    margin-bottom: 30px;
+..aboutme-body>h1{
+
 }
 
-.aboutme-body :nth-child(2){
-    margin-bottom: 30px;
-    width: 50%;
+.aboutme-body>p{
+    font-size: large;
+    width: 65%;
 }
 
 
 /*******************       SKILL    BODY        ***********/
 .skill-body{
+    /* border: 3px solid white; */
     width: 80%;
-    margin-top: 100px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 100px auto;
     padding: 50px 50px;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
@@ -325,7 +324,6 @@ nav>span{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
-    /* grid-template-rows: repeat(3, 1fr); */
 }
 
 .skill-body>div>div{
@@ -460,29 +458,34 @@ nav>span{
     }
 
     .aboutme-body{
-        border: 30px soild rgb(255, 0, 0);
-        padding: 15px 5px;
+        /* border: 30px soild rgb(255, 0, 0); */
+        padding: 25px 15px;
         width: 95%;
+        height: 600px;
         margin: 20px 2.5%;
         height: auto;
         flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
         
     }
     .aboutme-body>h1{
-        border: 3px solid red;
+        /* border: 3px solid red; */
     }
     .aboutme-body>p{
-        border: 3px solid white;
+        /* border: 3px solid white; */
         width: 100%;
     }
 
     .skill-body{
         width: 95%;
         margin:50px auto;
+        padding: 5px 5px;
     }
 
     .skill-body>div{
         grid-template-columns: repeat(2, 1fr);
+        gap:15px;
     }
 
     .projects{
