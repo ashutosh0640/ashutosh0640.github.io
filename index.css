@@ -1,14 +1,17 @@
 *{
-    margin: auto;
+   margin: 0;
     padding: 0;
     box-sizing: border-box;
-    max-width: 1400px;
 }
 
 body{
     font-family: 'Courier New', Courier, monospace;
     color: #c4974c;
     text-align:left;
+   
+}
+.main{
+    max-width: 1400px;
     margin: auto;
 }
 
@@ -104,9 +107,9 @@ body{
 nav{
     /* border: 5px solid red; */
     width: 100%;
+    max-width: 1400px;
     height: 80px;
-    padding: 0 20px;
-    /* border-bottom: 5px solid #c4984c52; */
+    padding: 20px 5px;
     box-shadow: #021116 0px 10px 500px, #c4984c52 0px 8px 8px;
     background: -webkit-linear-gradient(to right, #023e3e, #021116);
     background: linear-gradient(to right,#023e3e, #021116);
@@ -117,16 +120,26 @@ nav{
     position:fixed;
     z-index: 1;
 }
+nav>div{
+    /* border: 3px solid white; */
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-nav img {
-    /* border: 3px solid black; */
-   height: 100%;
+
+nav>div>img {
+    /* border: 3px solid white; */
+    width: 100%;
+}
+nav>span{
+    display: none;
 }
 
 nav ul{
     /* border: 5px solid greenyellow; */
-    width: 650px;
-    height: 100px;
+    width: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -140,37 +153,27 @@ nav>ul>li{
     list-style: none;
 }
 nav>ul>li>a{
-    margin: 0 10px;
-    width: 100%;
-}
-
-nav>ul>li:hover{
-    color: #021116;
+    /* margin: 0 10px; */
+    text-decoration: none;
+    color: #c4974c;
+    font-size: large;
     font-weight: 900;
-    box-sizing: border-box;
-    background-color: #c4974c;
-    border-radius: 20px;
+    width: 100%;
 
+    padding: 3px 10px;
+    border-radius: 20px;
 }
 
 nav>ul>li>a:hover{
-    color: #021116;
+    color: #023e3e;
+    background-color: #c4974c;
     font-weight: 900;
     width: 100%;
+    transition: 0.5s;
 }
 
-
-nav span{
-   display: none;
-   cursor: pointer;
-}
-
-a{
-    text-decoration: none;
-
-    color: #c4974c;
-    font-size: x-large;
-    
+nav>span{
+    border: 3px solid white;
 }
 
 /*************** Top Body *******************/
@@ -178,44 +181,49 @@ a{
 .top-body{
     /* border: 2px solid white; */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    margin-top: 50px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 50px 10%;
+    padding: 20px 20px;
     width: 80%;
-    height: 300px;
+    height: 400px;
     display: flex;
-    flex-direction: row;
-    justify-content:space-evenly;
+    flex-direction:row;
+    justify-content:space-between;
     align-items: center;
     
 }
-.portfolio-pic{
+
+.top-body>img:hover{
+    /* animation: portfolio-anim 1s; */
+    border-radius: 0%;
+}
+
+
+.top-body>img{
     /* border: 3px solid white; */
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: 350px;
-    height: 350px;
-    background-color: #c4984c21;
+    height: auto;
     border-radius: 50%;
 }
-.portfolio-pic:hover{
-    /* animation: portfolio-anim 1s; */
-    border-radius: 0%;
-}
-.portfolio-pic>img:hover{
-    /* animation: portfolio-anim 1s; */
-    border-radius: 0%;
-}
-
-
-.portfolio-pic img{
-    width: 100%;
-     height: auto;
-    border-radius: 50%;
+.top-body>div{
+    /* border: 2px solid red; */
+    width: 55%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 
-.java-backend-heading{
-    /* width: 400px; */
+#hey{
+    font-size: large;
+    font-weight: 900;
+    font-family: cursive;
+}
+
+#ashutosh{
     /* border: 2px solid white; */
+    font-size: 60px;
+    font-family: cursive;
 }
 
 .Resume{
@@ -230,17 +238,21 @@ a{
     cursor: pointer;
 }
 
+.Resume>a{
+    text-decoration: none;
+    color: #023e3e;
+}
+
+
 
 /*************** Typing animation *******************/
 .typing-heading{
     border-right: 4px solid #c4974c;
     font-size: xx-large;
     color: #c4974c;
-    /* width: 430px; */
-    /* height: 30px; */
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 6s steps(19) infinite reverse, blinking 0.5s infinite step-end alternate;
+    animation: typing 6s steps(20) infinite reverse, blinking 0.5s infinite step-end alternate;
 }
 
 @keyframes typing{
@@ -299,11 +311,7 @@ a{
     margin-left: 10%;
     margin-right: 10%;
     padding: 50px 50px;
-    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
-
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-
-   
 }
 
 .skill-body h1{
@@ -314,7 +322,6 @@ a{
 .skill-body>div{
     /* border: 3px solid red; */
     width: 100%;
-    /* height: 1800px; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
@@ -342,8 +349,7 @@ a{
 .projects{
     /* border: 3px solid red; */
     width: 80%;
-    margin-left:10%;
-    margin-top: 100px;
+    margin: 100px auto;
     
 }
 /* .calender{
@@ -371,39 +377,30 @@ a{
 @media (min-width:765px) and (max-width:1023px) {
 
     /************* NAVIGATION BAR ***************/
-
-    nav{
-        height: 80px;
-    }
-    nav h1{
-        /* border: 3px solid black; */
-        font-size: 30px;
+    
+    nav>div{
+        width: 15%;
     }
 
-    nav ul{
-        /* border: 5px solid greenyellow; */
-        /* width: 35Opx; */
+    nav>ul{
         display: none;
     }
-
-    nav span{
+    nav>span{
         display: inline-block;
-        
-     }
-     nav span i{
-        color: #c4974c;
-        size: 30px;
-     } 
+    }
+
+    /*************** TOP BODY **************************/
+
+    .top-body{
+        height: 500px;
+        flex-direction: column;
+    }
+
+
+
 }
 
-/* .top-body{
-    margin-top: 25px;
-    margin-left: 2.5px;
-    margin-right: 2.5px;
-    width: 95%;
-    height: 500px;
-    flex-direction: column;
-} */
+
 
 
 
@@ -415,33 +412,84 @@ a{
 
     /************* NAVIGATION BAR ***************/
 
-    nav h1{
-        /* border: 3px solid black; */
+    nav>div{
+        width: 15%;
+    }
+    nav>ul{
+        display: none;
+    }
+    nav>span{
+        border: 5px solid white;
+        display: inline-block;
+    }
+
+    /*************** TOP BODY **************************/
+
+    .top-body{
+        flex-direction: column;
+        align-items: space-between;
+        justify-content: space-between;
+        width: 95%;
+        margin: 20px 2.5%;
+        height: 500px;
+    }
+
+    .top-body>img{
+        width: 270px;
+    }
+    .top-body>div{
+        /* border: 3px solid white; */
+        padding: 20px 0;
+        width: 100%;
+    }
+    #hey{
+        font-size: large;
+        font-weight: 900;
+        font-family: cursive;
+    }
+
+    #ashutosh{
+        font-size: 33px;
+        font-family: cursive;
+    }
+
+    .java-heading{
+        /* border: 3px solid white; */
+        width: 90%;
         font-size: 20px;
     }
 
-    nav ul{
-        /* border: 5px solid greenyellow; */
-        /* width: 35Opx; */
-        height: 100px;
-        display: none;
+    .aboutme-body{
+        border: 30px soild rgb(255, 0, 0);
+        padding: 15px 5px;
+        width: 95%;
+        margin: 20px 2.5%;
+        height: auto;
+        flex-direction: column;
+        
+    }
+    .aboutme-body>h1{
+        border: 3px solid red;
+    }
+    .aboutme-body>p{
+        border: 3px solid white;
+        width: 100%;
     }
 
-    nav span{
-        display: inline-block;
-     }
-     nav span i{
-       color: #c4974c;
-     }
-
-     /* .top-body{
-        margin-top: 25px;
-        margin-left: 2.5px;
-        margin-right: 2.5px;
+    .skill-body{
         width: 95%;
-        height: 500px;
-        flex-direction: column;
-    } */
+        margin:50px auto;
+    }
+
+    .skill-body>div{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects{
+        width: 90%;
+        margin: 50px auto;
+    }
+
 }
 
 
