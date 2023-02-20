@@ -90,6 +90,9 @@ body{
     height: 100px;
     animation-delay: 3.5s;
 }
+
+
+
 @keyframes go-up{
     0%{
         transform: translateY(0) rotate(0deg);
@@ -120,22 +123,19 @@ nav{
     position:fixed;
     z-index: 1;
 }
-nav>div{
+#logo{
     /* border: 3px solid white; */
-    width: 5%;
+    height: 150%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 
-nav>div>img {
-    /* border: 3px solid white; */
-    width: 100%;
+#logo>img{
+    height: 100%;
 }
-nav>span{
-    display: none;
-}
+
 
 nav ul{
     /* border: 5px solid greenyellow; */
@@ -167,14 +167,29 @@ nav>ul>li>a{
 nav>ul>li>a:hover{
     color: #023e3e;
     background-color: #c4974c;
+    box-shadow: #c4974c 0px 0px 40px, #c4974c 0px 0px 15px;
     font-weight: 900;
     width: 100%;
-    transition: 0.5s;
+    /* transition: 0.5s; */
 }
 
-nav>span{
-    border: 3px solid white;
+.menuBtn{
+   
+    width: 35px;
+    height: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+
 }
+.menuBtn>span{
+    border: 1px solid white;
+    width: 100%;
+}
+
+
 
 /*************** Top Body *******************/
 
@@ -182,7 +197,7 @@ nav>span{
     /* border: 2px solid white; */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     margin: 50px 10%;
-    padding: 20px 20px;
+    padding: 40px 20px;
     width: 80%;
     height: 400px;
     display: flex;
@@ -192,18 +207,22 @@ nav>span{
     
 }
 
-.top-body>img:hover{
-    /* animation: portfolio-anim 1s; */
-    border-radius: 0%;
-}
-
-
 .top-body>img{
     /* border: 3px solid white; */
     width: 350px;
     height: auto;
     border-radius: 50%;
 }
+
+.top-body>img:hover{
+    /* animation: portfolio-anim 1s; */
+    border-radius: 0%;
+    transition: 0.2s;
+    transition-timing-function:ease-out;
+}
+
+
+
 .top-body>div{
     /* border: 2px solid red; */
     width: 55%;
@@ -222,14 +241,18 @@ nav>span{
 
 #ashutosh{
     /* border: 2px solid white; */
-    font-size: 60px;
+    font-size: 2rem;
     font-family: cursive;
 }
 
 .Resume{
     /* border: 3px solid white; */
-    display: inline-block;
-    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
     background-color: #c4974c;
     color: #021116;
     font-weight: 900;
@@ -238,8 +261,12 @@ nav>span{
     cursor: pointer;
 }
 
+
 .Resume>a{
+    /* border: 3px solid red; */
+    padding: auto;
     text-decoration: none;
+    font-size: 1.7rem;
     color: #023e3e;
 }
 
@@ -294,10 +321,6 @@ nav>span{
     align-items: center;
 }
 
-..aboutme-body>h1{
-
-}
-
 .aboutme-body>p{
     font-size: large;
     width: 65%;
@@ -343,8 +366,8 @@ nav>span{
     justify-content: center;
 }
 
-/******************** Projects ******************************/
-.projects{
+/******************** Statistics ******************************/
+.stats{
     /* border: 3px solid red; */
     width: 80%;
     margin: 100px auto;
@@ -356,7 +379,7 @@ nav>span{
     background-color: red;
 } */
 
-.projects>img{
+.stats-img{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
@@ -372,29 +395,28 @@ nav>span{
 /********************** MEDIA QUERY MID SIZE *****************************/
 /************************************************************************/
 
-@media (min-width:765px) and (max-width:1023px) {
+@media (min-width:481px) and (max-width:768px) {
 
     /************* NAVIGATION BAR ***************/
-    
-    nav>div{
-        width: 15%;
+
+    nav{
+        position: fixed;
     }
 
     nav>ul{
         display: none;
     }
-    nav>span{
-        display: inline-block;
+
+    .menuBtn{
+        display: flex;
     }
 
     /*************** TOP BODY **************************/
 
     .top-body{
-        height: 500px;
+        
         flex-direction: column;
     }
-
-
 
 }
 
@@ -405,20 +427,20 @@ nav>span{
 /********************************************************************************************/
 /*************************************** MEDIA QUERY SMALL SIZE ****************************/
 /******************************************************************************************/
-@media (max-width:765px) {
+@media (min-width:320px) and (max-width:480px) {
 
 
     /************* NAVIGATION BAR ***************/
 
-    nav>div{
-        width: 15%;
+    nav{
+        position: fixed;
     }
     nav>ul{
         display: none;
     }
-    nav>span{
-        border: 5px solid white;
-        display: inline-block;
+
+    .menuBtn{
+        display: flex;
     }
 
     /*************** TOP BODY **************************/
@@ -427,9 +449,11 @@ nav>span{
         flex-direction: column;
         align-items: space-between;
         justify-content: space-between;
+        padding: 30px 10px;
+        height: 550px;
         width: 95%;
-        margin: 20px 2.5%;
-        height: 500px;
+        margin: 50px 2.5%;
+       
     }
 
     .top-body>img{
@@ -446,10 +470,7 @@ nav>span{
         font-family: cursive;
     }
 
-    #ashutosh{
-        font-size: 33px;
-        font-family: cursive;
-    }
+    
 
     .java-heading{
         /* border: 3px solid white; */
@@ -469,9 +490,7 @@ nav>span{
         align-items: start;
         
     }
-    .aboutme-body>h1{
-        /* border: 3px solid red; */
-    }
+    
     .aboutme-body>p{
         /* border: 3px solid white; */
         width: 100%;
@@ -488,9 +507,14 @@ nav>span{
         gap:15px;
     }
 
-    .projects{
+    .stats{
         width: 90%;
         margin: 50px auto;
+    }
+    .stats-img{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        width: 100%;
+        margin-top: 25px;
     }
 
 }

@@ -8,22 +8,25 @@
 
     <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="index.js"></script>
+
     <title>Ashutosh Kumar Portfolio</title>
 </head>
 <body>
     <div class="main">
     <nav>
-       <div><img src="portfolio-logo.png" alt=""></div>
-       <span><i class="fa-solid fa-bars"></i></span>
+       <div id="logo"><img src="portfolio-logo.png" alt=""></div>
         <ul class="menu">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Skills</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Projects</a></li>
-            <li><a href="#">Resume</a></li>
+            <li><a href="https://drive.google.com/uc?export=download&id=1cAg90MfhQuv-Loc9cRk71PEcPhvG4Ynd">Resume</a></li>
         </ul>
+
+        <div class="menuBtn"><span></span><span></span><span></span></div>
+        
     </nav>
     
     <div class="main-body">
@@ -37,7 +40,7 @@
                 
                 <div><h1 class="typing-heading java-heading">JAVA BACKEND DEVELOPER</h1></div>
 
-                <h1 class="Resume"><a href="https://drive.google.com/uc?export=download&id=1cAg90MfhQuv-Loc9cRk71PEcPhvG4Ynd">Resume</a></h1>
+                <div class="Resume"><a href="https://drive.google.com/uc?export=download&id=1cAg90MfhQuv-Loc9cRk71PEcPhvG4Ynd">Resume</a><svg  height="60%" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 15V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18L4 15M8 11L12 15M12 15L16 11M12 15V3" stroke="#023e3e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></div>
            </div>
         </div>
         <div class="aboutme-body">
@@ -67,7 +70,7 @@
 
                 <div><div class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="50%"  viewBox="0 0 32 32"><g fill="none" fill-rule="evenodd"><path d="M0 0h32v32H0z"/><path fill="#c4974c" d="M5.466 27.993a1.364 1.364 0 10-.087-.076l-.266-.234C1.972 24.762 0 20.597 0 15.978 0 7.168 7.168 0 15.98 0c4.48 0 8.53 1.857 11.435 4.836a14.681 14.681 0 001.7-3.015c2.036 6.118 3.233 11.26 2.795 15.31-.592 8.274-7.508 14.83-15.93 14.83a15.903 15.903 0 01-10.276-3.757l-.238-.21zm23.58-4.982c4.01-5.336 1.775-13.965-.085-19.48-1.657 3.453-5.738 6.094-9.262 6.93-3.303.788-6.226.142-9.283 1.318-6.97 2.68-6.86 10.992-3.02 12.86.002 0 .23.124.227.12 0-.002 5.644-1.122 8.764-2.274 4.56-1.684 9.566-5.835 11.213-10.657-.877 5.015-5.182 9.84-9.507 12.056-2.302 1.182-4.092 1.445-7.88 2.756-.464.158-.828.314-.828.314.96-.16 1.917-.212 1.917-.212 5.393-.255 13.807 1.516 17.745-3.73z"/></g></svg><h3>SpringBoot</h3></div></div>
 
-                <div><div class="icons"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50%" height="50%" fill-rule="nonzero"><g fill="#c4974c" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M45.274,2.325c-0.19,-0.207 -0.457,-0.325 -0.738,-0.325h-39.072c-0.281,0 -0.548,0.118 -0.738,0.325c-0.19,0.207 -0.283,0.485 -0.258,0.764l3.52,39.427c0.037,0.412 0.324,0.759 0.722,0.873l16.01,4.573c0.089,0.025 0.182,0.038 0.274,0.038c0.092,0 0.185,-0.013 0.274,-0.038l16.024,-4.573c0.398,-0.114 0.685,-0.461 0.722,-0.873l3.518,-39.427c0.025,-0.279 -0.069,-0.557 -0.258,-0.764zM12,29.004l7,1.942v-19.946h4v26l-11,-3.051zM38.054,22l-1.054,12.25l-10,2.75v-4.601l6.75,-1.855l0.25,-3.75l-7,1.206v-17h12l-0.345,4h-7.655v8z"/></g></g></svg><h3>Java Script</h3></div></div>
+                <div><div class="icons"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50%" height="50%" fill-rule="nonzero"><g fill="#c4974c" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M45.274,2.325c-0.19,-0.207 -0.457,-0.325 -0.738,-0.325h-39.072c-0.281,0 -0.548,0.118 -0.738,0.325c-0.19,0.207 -0.283,0.485 -0.258,0.764l3.52,39.427c0.037,0.412 0.324,0.759 0.722,0.873l16.01,4.573c0.089,0.025 0.182,0.038 0.274,0.038c0.092,0 0.185,-0.013 0.274,-0.038l16.024,-4.573c0.398,-0.114 0.685,-0.461 0.722,-0.873l3.518,-39.427c0.025,-0.279 -0.069,-0.557 -0.258,-0.764zM12,29.004l7,1.942v-19.946h4v26l-11,-3.051zM38.054,22l-1.054,12.25l-10,2.75v-4.601l6.75,-1.855l0.25,-3.75l-7,1.206v-17h12l-0.345,4h-7.655v8z"/></g></g></svg><h3>JavaScript</h3></div></div>
 
                 
                 <div><div class="icons"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50%" height="50%" fill-rule="nonzero"><g fill="#c4974c" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M45.27344,2.32422c-0.1875,-0.20703 -0.45703,-0.32422 -0.73828,-0.32422h-39.07031c-0.28125,0 -0.55078,0.11719 -0.73828,0.32422c-0.19141,0.20703 -0.28516,0.48438 -0.25781,0.76563l3.51953,39.42578c0.03516,0.41406 0.32422,0.75781 0.72266,0.875l16.01172,4.57031c0.08594,0.02734 0.17969,0.03906 0.27344,0.03906c0.09375,0 0.18359,-0.01172 0.27344,-0.03906l16.02344,-4.57031c0.39844,-0.11719 0.68359,-0.46094 0.72266,-0.875l3.51563,-39.42578c0.02734,-0.28125 -0.06641,-0.55859 -0.25781,-0.76562zM36.84766,15.91797h-18.8125l0.44922,5.08984h17.91016l-1.34375,15.04297l-10.05859,3.03906l-0.09766,-0.03125l-9.94141,-3.01172l-0.54297,-6.12891h4.87109l0.21094,2.37891l5.55859,1.16406l5.45703,-1.16406l0.58203,-6.4375h-17.04297l-1.32422,-14.80469h24.55859z"></path></g></g></svg><h3>HTML</h3></div></div>
@@ -79,13 +82,14 @@
                 <div><div class="icons"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50%" height="50%" fill-rule="nonzero"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M44,11.11v25.78c0,1.27 -0.79,2.4 -1.98,2.82l-8.82,4.14l0.8,-10.85v-18l-0.8,-10.85l8.82,4.14c1.19,0.42 1.98,1.55 1.98,2.82z" fill="#c4974c"/><path d="M9,33.896l25,-18.896v-9.647c0,-1.198 -1.482,-1.758 -2.275,-0.86l-27.067,24.746c-0.9,0.83 -0.849,2.267 0.107,3.032c0,0 1.324,1.232 1.803,1.574c0.736,0.525 1.703,0.585 2.432,0.051z" fill-opacity="0.83922" fill="#c4974c"/><path d="M9,14.104l25,18.896v9.647c0,1.198 -1.482,1.758 -2.275,0.86l-27.067,-24.746c-0.9,-0.83 -0.849,-2.267 0.107,-3.032c0,0 1.324,-1.232 1.803,-1.574c0.736,-0.525 1.703,-0.585 2.432,-0.051z" fill-opacity="0.87843" fill="#c4974c"/></g></g></svg><h3>VS Code</h3></div></div>
             </div>
         </div>
-        <div class="projects">
-            <h1>Projects</h1>
-            <div class="calender"></div>
-            <div><img src="https://github-readme-stats.vercel.app/api/top-langs?username=ashutosh0640&show_icons=true&locale=en&layout=compact" alt=""></div>
-            <img src="https://github-readme-streak-stats.herokuapp.com/?user=ashutosh0640&theme=violet-dark&hide_border=true&border_radius=0&background=023e3e&ring=c4974c&border=c4974c&stroke=c4974c&currStreakNum=c4974c&fire=ffff&sideNums=c4974c&currStreakLabel=c4974c&sideLabels=c4974c&dates=c4974c" alt="">
+        <div class="stats">
+            <h1>GitHub Statistics</h1>
+            <!-- <div class="calender"></div> -->
+            <div><img class="stats-img" src="https://github-readme-stats.vercel.app/api/top-langs?username=ashutosh0640&show_icons=true&locale=en&layout=compact" alt=""></div>
 
-            <img src="https://github-readme-stats.vercel.app/api?username=ashutosh0640&show_icons=true&theme=transparent&bg_color=023e3e&title_color=c4974c&text_color=c4974c&icon_color=ffff&text_bold=false&border_radius=0&hide_border=true" alt="">
+            <img class="stats-img"  src="https://github-readme-streak-stats.herokuapp.com/?user=ashutosh0640&theme=violet-dark&hide_border=true&border_radius=0&background=023e3e&ring=c4974c&border=c4974c&stroke=c4974c&currStreakNum=c4974c&fire=ffff&sideNums=c4974c&currStreakLabel=c4974c&sideLabels=c4974c&dates=c4974c" alt="">
+
+            <img class="stats-img" src="https://github-readme-stats.vercel.app/api?username=ashutosh0640&show_icons=true&theme=transparent&bg_color=023e3e&title_color=c4974c&text_color=c4974c&icon_color=ffff&text_bold=false&border_radius=0&hide_border=true" alt="">
         </div>
 
 
