@@ -189,6 +189,7 @@ nav>ul>li>a:hover{
     width: 100%;
 }
 
+
 .dropDown{
     border: 2px solid white;
     background-color: white;
@@ -203,27 +204,44 @@ nav>ul>li>a:hover{
     padding-left: 20px;
     border-radius: 20px;
     cursor: pointer;
-    transition-property: position;
-    transition-duration: 2s;
-    /* z-index: 999; */
 }
+
+
+@keyframes fadeIn {
+ from{
+    transform: translateX(150px);
+    opacity: 0;
+ }
+ to{
+    transform: translateX(0px);
+    opacity: 1;
+ }
+}
+
 #menuHome{
     top: 110px;
+    animation: fadeIn .1s ease-out backwards;
+    
 }
 #menuAbout{
     top: 160px;
+    animation: fadeIn .2s ease-out backwards;
 }
 #menuSkills{
     top: 210px;
+    animation: fadeIn .3s ease-out backwards;
 }
 #menuContact{
     top: 260px;
+    animation: fadeIn .4s ease-out backwards;
 }
 #menuProject{
     top: 310px;
+    animation: fadeIn .5s ease-out backwards;
 }
 #menuStat{
     top: 360px;
+    animation: fadeIn .6s ease-out backwards;
 }
 
 
@@ -451,9 +469,34 @@ nav>ul>li>a:hover{
     /*************** TOP BODY **************************/
 
     .top-body{
-        
         flex-direction: column;
+        width: 95%;
+        margin: auto;
+    }
 
+    .top-body>:nth-child(2){
+        /* border: 3px solid white; */
+        margin-top: 50px;
+        align-items: start;
+    }
+    .top-body>:nth-child(2)>div{
+        /* border: 3px solid white; */
+        margin-top: 20px;
+        
+    }
+
+    .aboutme-body{
+        width: 95%;
+        margin: auto;
+    }
+
+    .skill-body{
+        width: 95%;
+        margin: auto;
+    }
+
+    .skill-body>div{
+        grid-template-columns: repeat(3, 1fr);
     }
 
 }
