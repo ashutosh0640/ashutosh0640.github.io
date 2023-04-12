@@ -1,13 +1,45 @@
-.btn{
-    width: 200px;
-    height: 200px;
-    background-color: black;
-    color: white;
-    margin: auto;
-    margin-top: 200px;
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.btn:hover{
-    transform: translateY(-20px);
-    transition: 0.6s ease-in-out;
+.div1{
+  background-color: brown;
+  margin-top: 20px;
+  width: 10vw;
+  height: 5vh;
+  color: white;
+  
 }
+#divOne{
+  transition: transform 0.2s;
+}
+#divTwo{
+  transition: transform 0.3s;
+}
+#divThree{
+  transition: transform 0.4s;
+}
+#divFour{
+  transition: transform 0.5s;
+}
+#divFive{
+  transition: transform 0.6s;
+}
+
+/* .div1:hover{
+  background-color: orangered;
+  transform: translate(-10vw,0);
+} */
+
+.butn{
+  margin-top:25px;
+  width: 55px;
+  height: 35px;
+  background-color: black;
+  color: white;
+}
+
