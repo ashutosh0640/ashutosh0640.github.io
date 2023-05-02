@@ -576,7 +576,21 @@
 
      #projects{
         margin-top: 100px ;
+        
         width: 95%;
+        height: auto;
+
+     }
+
+     #projects>div{
+        
+        display: flex;
+        flex-direction: column;
+     }
+
+     #projects>div>div{
+        height: auto;
+        padding: 10px 0;
      }
 
      .stats{
@@ -684,6 +698,28 @@
      .skill-body>div{
          grid-template-columns: repeat(2, 1fr);
          gap:15px;
+     }
+
+     #projects{
+        margin-top: 100px ;
+        width: 95%;
+        height: auto;
+
+     }
+
+     #projects>div{
+        
+        display: flex;
+        flex-direction: column;
+     }
+
+     #projects>div>div{
+        height: auto;
+        padding: 10px 0;
+     }
+
+     .stats{
+        width: 95%;
      }
 
 
