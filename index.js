@@ -23,12 +23,12 @@
             
         }else{
             butn_on_off = true;
-            div_1.style.transform = "translate(-14vw,0)";
-            div_2.style.transform = "translate(-14vw,0)";
-            div_3.style.transform = "translate(-14vw,0)";
-            div_4.style.transform = "translate(-14vw,0)";
-            div_5.style.transform = "translate(-14vw,0)";
-            div_6.style.transform = "translate(-14vw,0)";
+            div_1.style.transform = "translate(-160px,0)";
+            div_2.style.transform = "translate(-160px,0)";
+            div_3.style.transform = "translate(-160px,0)";
+            div_4.style.transform = "translate(-160px,0)";
+            div_5.style.transform = "translate(-160px,0)";
+            div_6.style.transform = "translate(-160px,0)";
         }
             
         

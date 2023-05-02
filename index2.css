@@ -6,40 +6,45 @@
   box-sizing: border-box;
 }
 
-.div1{
-  background-color: brown;
-  margin-top: 20px;
-  width: 10vw;
-  height: 5vh;
+body{
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(45deg, green, yellow);
+  font-family: cursive;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  width: 350px;
+  height: 500px;
+}
+
+.card{
+  border: 3px solid black;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.card:hover > .card{
+  cursor: pointer;
+  transform: rotateY(180deg);
   
 }
-#divOne{
-  transition: transform 0.2s;
-}
-#divTwo{
-  transition: transform 0.3s;
-}
-#divThree{
-  transition: transform 0.4s;
-}
-#divFour{
-  transition: transform 0.5s;
-}
-#divFive{
-  transition: transform 0.6s;
+
+.front,
+.back{
+  border: 4px solid orange;
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 0 5px 2px rgba(50, );
 }
 
-/* .div1:hover{
-  background-color: orangered;
-  transform: translate(-10vw,0);
-} */
-
-.butn{
-  margin-top:25px;
-  width: 55px;
-  height: 35px;
-  background-color: black;
-  color: white;
+.front{
+  border: 4px solid white;
+  background-image: url(https://images.pexels.com/photos/2055100/pexels-photo-2055100.jpeg?cs=srgb&dl=pexels-george-desipris-2055100.jpg&fm=jpg);
 }
 
